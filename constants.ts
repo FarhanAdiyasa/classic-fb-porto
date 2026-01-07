@@ -57,7 +57,7 @@ export const AWARDS = [
     title: "3rd Place Natixis Hackathon",
     year: "2024",
     issuer: "Natixis (Groupe BPCE)",
-    details: "Achieved 3rd place in a competitive hackathon. Developed 'LingoQuest', an AI-supported language app leveraging OpenAI's GPT-3.5 and Whisper for seamless language learning experiences."
+    details: "Achieved 3rd place in a competitive hackathon organized by Natixis. Developed an AI-supported language app designed to facilitate language correction and learning. The platform leveraged OpenAI's GPT-3.5 for text generation and correction, Whisper for speech-to-text transcription, and TTS-1 for text-to-speech synthesis, delivering a seamless, interactive language learning experience."
   }
 ];
 
@@ -91,7 +91,7 @@ export const PROJECTS_DATA = [
     description: 'An interactive web app to raise awareness about the financial realities of teachers in Indonesia. Features teacher selection, savings calculator with reality-check mode, and shareable results.',
     status: 'live',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=600&h=400&auto=format&fit=crop',
+    image: '/guru-kita.png',
     links: {
       github: 'https://github.com/FarhanAdiyasa/guru-kita',
       demo: 'https://gurukita.farhan-adiyasa.site'
@@ -105,9 +105,9 @@ export const PROJECTS_DATA = [
     description: 'Scans your GitHub repos for outdated tech, generates a "Tech FOMO Score" and personalized recommendations using Google Gemini API. Increased modern tech adoption by 60%.',
     status: 'paused',
     featured: false,
-    image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=600&h=400&auto=format&fit=crop',
+    image: '/fomo-tech.png',
     links: {
-      github: 'https://github.com/FarhanAdiyasa/fomo-tech',
+      github: 'https://github.com/FarhanAdiyasa/FomoTechGenerator',
       demo: 'https://fomotech.farhan-adiyasa.site'
     }
   }

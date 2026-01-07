@@ -35,30 +35,9 @@ const App: React.FC = () => {
 
                {/* Profile Pic */}
                <div>
-                  <div className="mb-2 text-center hidden md:block">
-                     <span
-                        onClick={() => setActiveTab('projects')}
-                        className="text-[#3b5998] font-bold text-[11px] hover:underline cursor-pointer"
-                     >
-                        View Portfolio Gallery
-                     </span>
-                  </div>
                   <div className="flex md:block gap-3 items-center md:items-start">
                      <div className="border border-[#ccc] p-1 bg-white inline-block w-[80px] md:w-full shrink-0">
-                        <img src="https://github.com/FarhanAdiyasa.png" className="w-full h-auto block grayscale hover:grayscale-0 transition-all duration-500" />
-                     </div>
-
-                     {/* Actions */}
-                     <div className="mt-0 md:mt-2 text-left space-y-1 pl-1 md:border-b border-[#d8dfea] pb-2 flex-1 md:flex-none">
-                        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="text-[#3b5998] cursor-pointer hover:underline flex items-center">
-                           <Download size={10} className="mr-1" /> Download CV
-                        </a>
-                        <a href="https://github.com/FarhanAdiyasa" target="_blank" rel="noopener noreferrer" className="text-[#3b5998] cursor-pointer hover:underline flex items-center">
-                           <Github size={10} className="mr-1" /> View Github
-                        </a>
-                        <a href="mailto:adiyasaa56@gmail.com" className="text-[#3b5998] cursor-pointer hover:underline flex items-center">
-                           <Mail size={10} className="mr-1" /> Send Email
-                        </a>
+                        <img src="/farhan-adiyasa.jpg" className="w-full h-auto block" />
                      </div>
                   </div>
                </div>
@@ -97,7 +76,7 @@ const App: React.FC = () => {
                <div className="mb-3 border-b border-[#ccc] pb-2 text-center md:text-left">
                   <h1 className="text-[22px] font-bold text-[#333] mb-0 leading-none">Farhan Adiyasa</h1>
                   <div className="text-gray-500 text-[11px] mt-1">
-                     Fullstack Developer • AI Enthusiast • Clean Architecture Advocate
+                     Fullstack Developer • Professional Googler & AI Bestie
                   </div>
                </div>
 
@@ -124,6 +103,48 @@ const App: React.FC = () => {
                            Delivered 60% project tracking efficiency gains, and hackathon-winning speech-to-text tools. Thrives in cross-functional teams,
                            blending technical precision with user-centric design.
                         </p>
+                     </div>
+
+                     {/* Contacts */}
+                     <div className="bg-[#f7f7f7] border border-[#ccc] p-2">
+                        <div className="font-bold text-[#333] border-b border-[#ddd] pb-1 mb-2">Contact & Profiles</div>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                           <a href="https://linkedin.com/in/farhanadiyasa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 border border-[#ddd] hover:border-[#3b5998] hover:bg-white transition-all">
+                              <Linkedin size={16} className="text-[#0077b5]" />
+                              <div>
+                                 <div className="font-bold text-[#3b5998] text-[12px]">LinkedIn</div>
+                                 <div className="text-[10px] text-gray-500">farhanadiyasa</div>
+                              </div>
+                           </a>
+                           <a href="https://github.com/FarhanAdiyasa" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 border border-[#ddd] hover:border-[#3b5998] hover:bg-white transition-all">
+                              <Github size={16} className="text-[#333]" />
+                              <div>
+                                 <div className="font-bold text-[#3b5998] text-[12px]">GitHub</div>
+                                 <div className="text-[10px] text-gray-500">FarhanAdiyasa</div>
+                              </div>
+                           </a>
+                           <a href="mailto:adiyasaa56@gmail.com" className="flex items-center gap-2 p-2 border border-[#ddd] hover:border-[#3b5998] hover:bg-white transition-all">
+                              <Mail size={16} className="text-[#ea4335]" />
+                              <div>
+                                 <div className="font-bold text-[#3b5998] text-[12px]">Email</div>
+                                 <div className="text-[10px] text-gray-500">adiyasaa56@gmail.com</div>
+                              </div>
+                           </a>
+                           <a href="https://medium.com/@adiyasaa56" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 border border-[#ddd] hover:border-[#3b5998] hover:bg-white transition-all">
+                              <span className="w-4 h-4 flex items-center justify-center font-bold text-[14px] text-black">M</span>
+                              <div>
+                                 <div className="font-bold text-[#3b5998] text-[12px]">Medium</div>
+                                 <div className="text-[10px] text-gray-500">@adiyasaa56</div>
+                              </div>
+                           </a>
+                           <a href="https://leetcode.com/u/adiyasaa56/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 p-2 border border-[#ddd] hover:border-[#3b5998] hover:bg-white transition-all">
+                              <span className="w-4 h-4 flex items-center justify-center font-bold text-[12px] text-[#ffa116]">LC</span>
+                              <div>
+                                 <div className="font-bold text-[#3b5998] text-[12px]">LeetCode</div>
+                                 <div className="text-[10px] text-gray-500">adiyasaa56</div>
+                              </div>
+                           </a>
+                        </div>
                      </div>
                   </div>
                )}
@@ -174,19 +195,6 @@ const App: React.FC = () => {
                {/* === TAB CONTENT: PROJECTS === */}
                {activeTab === 'projects' && (
                   <div className="space-y-4 pb-12">
-                     {/* Header */}
-                     <div className="bg-[#3b5998] px-3 py-1.5 flex justify-between items-center border border-[#3b5998] rounded-sm">
-                        <span className="font-bold text-white text-[12px] uppercase tracking-wider">Project Inventory [{PROJECTS_DATA.length}]</span>
-                        <div className="flex gap-2">
-                           <span className="bg-[#f0f2f5] text-[#3b5998] text-[9px] px-1.5 py-0.5 border border-[#3b5998] font-bold">
-                              Live: {PROJECTS_DATA.filter(p => p.status === 'live').length}
-                           </span>
-                           <span className="bg-[#f0f2f5] text-gray-500 text-[9px] px-1.5 py-0.5 border border-gray-400 font-bold">
-                              Side: {PROJECTS_DATA.filter(p => p.status !== 'live').length}
-                           </span>
-                        </div>
-                     </div>
-
                      {/* Featured Project - Spec Sheet Style */}
                      {PROJECTS_DATA.filter(p => p.featured).map((project) => (
                         <div key={project.id} className="border border-[#3b5998] bg-white p-0 rounded-sm overflow-hidden group">
@@ -205,7 +213,7 @@ const App: React.FC = () => {
                                     <img
                                        src={project.image}
                                        alt={project.title}
-                                       className="absolute inset-0 w-full h-full object-cover grayscale opacity-50 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                                       className="absolute inset-0 w-full h-full object-cover"
                                     />
                                     <div className="absolute inset-0 border-[8px] border-white/50"></div>
                                     <div className="absolute top-2 left-2 bg-white/90 border border-gray-300 px-1 text-[8px] uppercase">Preview Scale: 1:1</div>
@@ -274,11 +282,11 @@ const App: React.FC = () => {
                               </div>
 
                               {/* Visualization */}
-                              <div className="h-[100px] bg-gray-50 border-b border-[#ced4da] relative overflow-hidden">
+                              <div className="h-[180px] bg-gray-50 border-b border-[#ced4da] relative overflow-hidden">
                                  <img
                                     src={project.image}
                                     alt={project.title}
-                                    className="w-full h-full object-cover opacity-50 contrast-125 grayscale group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                                    className="w-full h-full object-cover"
                                  />
                                  <div className="absolute inset-0 bg-white/10 group-hover:opacity-0 transition-opacity"></div>
                               </div>
@@ -295,7 +303,7 @@ const App: React.FC = () => {
                                     ))}
                                  </div>
 
-                                 <p className="text-[11px] text-[#444] leading-snug mb-3 line-clamp-2 h-[34px]">{project.description}</p>
+                                 <p className="text-[11px] text-[#444] leading-snug mb-3">{project.description}</p>
 
                                  <div className="flex items-center justify-end gap-3 pt-2 border-t border-gray-100">
                                     <a href={project.links.github} target="_blank" rel="noopener noreferrer" className="text-[10px] text-[#3b5998] font-bold hover:underline">Source</a>
