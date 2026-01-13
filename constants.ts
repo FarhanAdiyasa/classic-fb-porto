@@ -103,7 +103,7 @@ export const PROJECTS_DATA = [
     subtitle: 'AI-Powered Tech Stack Analyzer',
     tech: ['Next.js', 'Gemini AI', 'Tailwind'],
     description: 'Scans your GitHub repos for outdated tech, generates a "Tech FOMO Score" and personalized recommendations using Google Gemini API. Increased modern tech adoption by 60%.',
-    status: 'paused',
+    status: 'live',
     featured: false,
     image: '/fomo-tech.png',
     links: {
