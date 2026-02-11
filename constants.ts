@@ -80,6 +80,8 @@ export const TECH_COLORS: Record<string, string> = {
   'Python': 'bg-gray-100 text-gray-700 border border-gray-200',
   'Grok API': 'bg-black text-white border border-gray-700',
   'Vite': 'bg-purple-50 text-purple-700 border border-purple-200',
+  'Supabase': 'bg-emerald-50 text-emerald-700 border border-emerald-200',
+  'Leaflet': 'bg-green-50 text-green-700 border border-green-200',
 };
 
 export const PROJECTS_DATA = [
@@ -109,6 +111,20 @@ export const PROJECTS_DATA = [
     links: {
       github: 'https://github.com/FarhanAdiyasa/FomoTechGenerator',
       demo: 'https://fomotech.farhan-adiyasa.site'
+    }
+  },
+  {
+    id: 'boengkoes-maps',
+    title: 'Ikutin Boengkoes',
+    subtitle: 'Boengkoes Network Culinary Map',
+    tech: ['Vite', 'React', 'Supabase', 'Leaflet'],
+    description: 'A specialized culinary map for Boengkoes Network\'s curated recommendations. Features real-time location tracking, automated YouTube metadata enrichment, and a streamlined navigation-focused interface.',
+    status: 'live',
+    featured: true,
+    image: '/ikutin-boengkoes.png',
+    links: {
+      github: 'https://github.com/FarhanAdiyasa/Boengkoes-maps',
+      demo: 'https://ikutin-boengkoes.farhan-adiyasa.site'
     }
   }
 ];
