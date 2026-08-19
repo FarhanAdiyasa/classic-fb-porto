@@ -82,6 +82,7 @@ export const TECH_COLORS: Record<string, string> = {
   'Vite': 'bg-purple-50 text-purple-700 border border-purple-200',
   'Supabase': 'bg-emerald-50 text-emerald-700 border border-emerald-200',
   'Leaflet': 'bg-green-50 text-green-700 border border-green-200',
+  'Go': 'bg-[#00add8] text-white border border-[#0092b7]',
 };
 
 export const PROJECTS_DATA = [
@@ -125,6 +126,20 @@ export const PROJECTS_DATA = [
     links: {
       github: 'https://github.com/FarhanAdiyasa/Boengkoes-maps',
       demo: 'https://ikutin-boengkoes.farhan-adiyasa.site'
+    }
+  },
+  {
+    id: 'biarin-aja-dulu',
+    title: 'Biarin Aja Dulu',
+    subtitle: 'Calm Decision Deferral Protocol',
+    tech: ['Next.js', 'Go', 'PostgreSQL'],
+    description: 'A quiet place to park distracting thoughts and ideas. Protects focus during deep work by "freezing" context and resurfacing it only when user-defined review periods are met.',
+    status: 'live',
+    featured: true,
+    image: '/biarin-aja-dulu.png',
+    links: {
+      github: 'https://github.com/FarhanAdiyasa/BiarinAjaDulu',
+      demo: 'https://biarin-aja-dulu.vercel.app'
     }
   }
 ];
